@@ -1,0 +1,54 @@
+#+TITLE: The web in /real time/
+#+AUTHOR: David Pineda Osorio @Pineiden
+#+EMAIL: dpineda@uchile.cl
+#+LANGUAGE: en
+
+* Creation of Techno Machines
+
+Here we will learn some wonderful and hard things. Maybe i couldn't obtain all the knowledge about 
+all necessary  to handle real time systems but the contents that i will provide to you will be worth it.
+With all of that you can start a little application and with some more research create a wonderful techno
+machine that will wonder all people.
+
+This content is created with my living work and i intend to contribute to the commonwealth. Hence i invite 
+you to do the same. Learn, create and share with the humanity your work, create commonwealth.
+
+The technologies used in this contents are avalaible on the web and i recommend to use Gnu/Linux, some distribution
+of the Debian family (Debian, Mint, Ubuntu, etc). You have to go deep on different languages: bash, python, javascript, 
+typescript, erlang, postgres; and design patterns: observer pattern, model-view-controller pattern, etc.
+
+* Install and configure the technologies
+
+** IDEs
+
+** Python
+
+** Virtual Environment
+
+** Django
+
+** Postgres
+
+** RabbitMQ
+
+** Angular
+
+* A General Schema
+
+* The Backend
+
+* The Channel
+
+* The Frontend
+
+* The Messages
+
+* Create an App on the Backend
+
+* Create an App on the Frontend
+
+* The Websocket Service
+
+* Binding the Websocket to your App
+
+* The End
