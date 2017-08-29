@@ -15,11 +15,20 @@ you to do the same. Learn, create and share with the humanity your work, create 
 
 The technologies used in this contents are avalaible on the web and i recommend to use Gnu/Linux, some distribution
 of the Debian family (Debian, Mint, Ubuntu, etc). You have to go deep on different languages: bash, python, javascript, 
-typescript, erlang, postgres; and design patterns: observer pattern, model-view-controller pattern, etc.
+typescript, erlang, postgres, lisp; and design patterns: observer pattern, model-view-controller pattern, etc.
 
 * Install and configure the technologies
 
 ** IDEs
+
+   Here i only can give you some some advices. Exists:
+  - *pycharm* : very friendly but uses a lot of resources [[https://www.jetbrains.com/pycharm/][page]]
+  - *geany* : easy to use with some limitations [[https://www.geany.org/][page]]
+  - *sublime text* : easy and poweful [[https://www.sublimetext.com/][page]]
+  - *emacs* : hard to use at beggining but the best (for me) [[https://www.gnu.org/software/emacs/][page]]
+  - *spacemacs* : a layer over emacs, with some more features.  [[http://spacemacs.org/][page]]
+
+  You can install some of these IDEs, try and if doesn't fix your needs change to another.
 
 ** Python
 

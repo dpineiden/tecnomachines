@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-08-29 Tue 21:13 -->
+<!-- 2017-08-29 Tue 21:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>The web in <i>real time</i></title>
@@ -233,30 +233,34 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgcbb10bd">1. Creation of Techno Machines</a></li>
-<li><a href="#org3ebcbff">2. Install and configure the technologies</a>
+<li><a href="#orgb13529b">1. Creation of Techno Machines</a></li>
+<li><a href="#org83a2307">2. Install and configure the technologies</a>
 <ul>
-<li><a href="#org7e147fa">2.1. IDEs</a></li>
-<li><a href="#org5618b3e">2.2. Python</a></li>
-<li><a href="#orga0068bf">2.3. Virtual Environment</a></li>
-<li><a href="#org4a5a95c">2.4. Django</a></li>
-<li><a href="#org43a3e2f">2.5. Postgres</a></li>
-<li><a href="#orgfe0d644">2.6. RabbitMQ</a></li>
-<li><a href="#orgce1ec79">2.7. Angular</a></li>
+<li><a href="#org116c6c5">2.1. IDEs</a></li>
+<li><a href="#orge6ce02c">2.2. Python</a></li>
+<li><a href="#org9a08101">2.3. Virtual Environment</a></li>
+<li><a href="#org67853db">2.4. Django</a></li>
+<li><a href="#orgabd2b04">2.5. Postgres</a></li>
+<li><a href="#org2bb052f">2.6. RabbitMQ</a></li>
+<li><a href="#org8d08c58">2.7. Angular</a></li>
 </ul>
 </li>
-<li><a href="#org1faecdb">3. A General Schema</a></li>
-<li><a href="#org425065b">4. The Backend</a></li>
-<li><a href="#orgc62fd0e">5. The Channel</a></li>
-<li><a href="#org276162e">6. The Frontend</a></li>
-<li><a href="#org7928959">7. The Messages</a></li>
-<li><a href="#org2dd4e68">8. The End</a></li>
+<li><a href="#org5941fe6">3. A General Schema</a></li>
+<li><a href="#org07f510c">4. The Backend</a></li>
+<li><a href="#org745b466">5. The Channel</a></li>
+<li><a href="#org352377c">6. The Frontend</a></li>
+<li><a href="#org0597563">7. The Messages</a></li>
+<li><a href="#org81b768b">8. Create an App on the Backend</a></li>
+<li><a href="#orgc5e8944">9. Create an App on the Frontend</a></li>
+<li><a href="#orge8d7160">10. The Websocket Service</a></li>
+<li><a href="#orgc967dc0">11. Binding the Websocket to your App</a></li>
+<li><a href="#orgf1825b0">12. The End</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcbb10bd" class="outline-2">
-<h2 id="orgcbb10bd"><span class="section-number-2">1</span> Creation of Techno Machines</h2>
+<div id="outline-container-orgb13529b" class="outline-2">
+<h2 id="orgb13529b"><span class="section-number-2">1</span> Creation of Techno Machines</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Here we will learn some wonderful and hard things. Maybe i couldn't obtain all the knowledge about 
@@ -273,70 +277,102 @@ you to do the same. Learn, create and share with the humanity your work, create 
 <p>
 The technologies used in this contents are avalaible on the web and i recommend to use Gnu/Linux, some distribution
 of the Debian family (Debian, Mint, Ubuntu, etc). You have to go deep on different languages: bash, python, javascript, 
-typescript, erlang, postgres; and design patterns: observer pattern, model-view-controller pattern, etc.
+typescript, erlang, postgres, lisp; and design patterns: observer pattern, model-view-controller pattern, etc.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3ebcbff" class="outline-2">
-<h2 id="org3ebcbff"><span class="section-number-2">2</span> Install and configure the technologies</h2>
+<div id="outline-container-org83a2307" class="outline-2">
+<h2 id="org83a2307"><span class="section-number-2">2</span> Install and configure the technologies</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org7e147fa" class="outline-3">
-<h3 id="org7e147fa"><span class="section-number-3">2.1</span> IDEs</h3>
-</div>
+</div><div id="outline-container-org116c6c5" class="outline-3">
+<h3 id="org116c6c5"><span class="section-number-3">2.1</span> IDEs</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Here i only can give you some some advices. Exists:
+</p>
+<ul class="org-ul">
+<li><b>pycharm</b> : very friendly but uses a lot of resources <a href="https://www.jetbrains.com/pycharm/">page</a></li>
+<li><b>geany</b> : easy to use with some limitations <a href="https://www.geany.org/">page</a></li>
+<li><b>sublime text</b> : easy and poweful <a href="https://www.sublimetext.com/">page</a></li>
+<li><b>emacs</b> : hard to use at beggining but the best (for me) <a href="https://www.gnu.org/software/emacs/">page</a></li>
+<li><b>spacemacs</b> : a layer over emacs, with some more features.  <a href="http://spacemacs.org/">page</a></li>
+</ul>
 
-<div id="outline-container-org5618b3e" class="outline-3">
-<h3 id="org5618b3e"><span class="section-number-3">2.2</span> Python</h3>
-</div>
-
-<div id="outline-container-orga0068bf" class="outline-3">
-<h3 id="orga0068bf"><span class="section-number-3">2.3</span> Virtual Environment</h3>
-</div>
-
-<div id="outline-container-org4a5a95c" class="outline-3">
-<h3 id="org4a5a95c"><span class="section-number-3">2.4</span> Django</h3>
-</div>
-
-<div id="outline-container-org43a3e2f" class="outline-3">
-<h3 id="org43a3e2f"><span class="section-number-3">2.5</span> Postgres</h3>
-</div>
-
-<div id="outline-container-orgfe0d644" class="outline-3">
-<h3 id="orgfe0d644"><span class="section-number-3">2.6</span> RabbitMQ</h3>
-</div>
-
-<div id="outline-container-orgce1ec79" class="outline-3">
-<h3 id="orgce1ec79"><span class="section-number-3">2.7</span> Angular</h3>
+<p>
+You can install some of these IDEs, try and if doesn't fix your needs change to another.
+</p>
 </div>
 </div>
 
-<div id="outline-container-org1faecdb" class="outline-2">
-<h2 id="org1faecdb"><span class="section-number-2">3</span> A General Schema</h2>
+<div id="outline-container-orge6ce02c" class="outline-3">
+<h3 id="orge6ce02c"><span class="section-number-3">2.2</span> Python</h3>
 </div>
 
-<div id="outline-container-org425065b" class="outline-2">
-<h2 id="org425065b"><span class="section-number-2">4</span> The Backend</h2>
+<div id="outline-container-org9a08101" class="outline-3">
+<h3 id="org9a08101"><span class="section-number-3">2.3</span> Virtual Environment</h3>
 </div>
 
-<div id="outline-container-orgc62fd0e" class="outline-2">
-<h2 id="orgc62fd0e"><span class="section-number-2">5</span> The Channel</h2>
+<div id="outline-container-org67853db" class="outline-3">
+<h3 id="org67853db"><span class="section-number-3">2.4</span> Django</h3>
 </div>
 
-<div id="outline-container-org276162e" class="outline-2">
-<h2 id="org276162e"><span class="section-number-2">6</span> The Frontend</h2>
+<div id="outline-container-orgabd2b04" class="outline-3">
+<h3 id="orgabd2b04"><span class="section-number-3">2.5</span> Postgres</h3>
 </div>
 
-<div id="outline-container-org7928959" class="outline-2">
-<h2 id="org7928959"><span class="section-number-2">7</span> The Messages</h2>
+<div id="outline-container-org2bb052f" class="outline-3">
+<h3 id="org2bb052f"><span class="section-number-3">2.6</span> RabbitMQ</h3>
 </div>
 
-<div id="outline-container-org2dd4e68" class="outline-2">
-<h2 id="org2dd4e68"><span class="section-number-2">8</span> The End</h2>
+<div id="outline-container-org8d08c58" class="outline-3">
+<h3 id="org8d08c58"><span class="section-number-3">2.7</span> Angular</h3>
+</div>
+</div>
+
+<div id="outline-container-org5941fe6" class="outline-2">
+<h2 id="org5941fe6"><span class="section-number-2">3</span> A General Schema</h2>
+</div>
+
+<div id="outline-container-org07f510c" class="outline-2">
+<h2 id="org07f510c"><span class="section-number-2">4</span> The Backend</h2>
+</div>
+
+<div id="outline-container-org745b466" class="outline-2">
+<h2 id="org745b466"><span class="section-number-2">5</span> The Channel</h2>
+</div>
+
+<div id="outline-container-org352377c" class="outline-2">
+<h2 id="org352377c"><span class="section-number-2">6</span> The Frontend</h2>
+</div>
+
+<div id="outline-container-org0597563" class="outline-2">
+<h2 id="org0597563"><span class="section-number-2">7</span> The Messages</h2>
+</div>
+
+<div id="outline-container-org81b768b" class="outline-2">
+<h2 id="org81b768b"><span class="section-number-2">8</span> Create an App on the Backend</h2>
+</div>
+
+<div id="outline-container-orgc5e8944" class="outline-2">
+<h2 id="orgc5e8944"><span class="section-number-2">9</span> Create an App on the Frontend</h2>
+</div>
+
+<div id="outline-container-orge8d7160" class="outline-2">
+<h2 id="orge8d7160"><span class="section-number-2">10</span> The Websocket Service</h2>
+</div>
+
+<div id="outline-container-orgc967dc0" class="outline-2">
+<h2 id="orgc967dc0"><span class="section-number-2">11</span> Binding the Websocket to your App</h2>
+</div>
+
+<div id="outline-container-orgf1825b0" class="outline-2">
+<h2 id="orgf1825b0"><span class="section-number-2">12</span> The End</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: David Pineda Osorio @Pineiden</p>
-<p class="date">Created: 2017-08-29 Tue 21:13</p>
+<p class="date">Created: 2017-08-29 Tue 21:29</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
